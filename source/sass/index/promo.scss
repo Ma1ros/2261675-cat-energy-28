@@ -6,6 +6,10 @@
   background: #ffffff url("../../img/jpg/cat-index.jpg") no-repeat center /
     cover;
   min-height: 302px;
+
+  @include tablet {
+    background: none;
+  }
 }
 
 .promo__title {
@@ -15,6 +19,20 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
+
+  @include tablet {
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin: 62px 237px 41px 118px;
+    text-align: left;
+  }
+
+  @include destop {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__slogan {
@@ -23,6 +41,15 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: left;
+    margin-left: 118px;
+  }
 }
 
 .promo__img {
